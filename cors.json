@@ -1,0 +1,25 @@
+{
+  "cors": [
+    {
+      "origin": ["*"],
+      "method": ["GET", "PUT", "POST", "DELETE", "HEAD", "OPTIONS"],
+      "responseHeader": [
+        "Content-Type",
+        "Content-Length",
+        "Content-Range",
+        "Content-Encoding",
+        "Content-Language",
+        "Accept",
+        "Authorization",
+        "Origin",
+        "X-Requested-With",
+        "Access-Control-Allow-Origin",
+        "Access-Control-Allow-Methods",
+        "Access-Control-Allow-Headers",
+        "Access-Control-Expose-Headers",
+        "Access-Control-Allow-Credentials"
+      ],
+      "maxAgeSeconds": 3600
+    }
+  ]
+}

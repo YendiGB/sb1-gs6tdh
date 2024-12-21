@@ -1,0 +1,89 @@
+{
+  "home": {
+    "today": "Hoy",
+    "affirmation": {
+      "title": "Afirmación Diaria",
+      "text": "Abrazo el viaje de la maternidad con gracia y paciencia",
+      "noAffirmation": "No hay afirmación disponible para hoy",
+      "noCategories": "No hay categorías de afirmaciones disponibles",
+      "noSelectedCategories": "Por favor selecciona categorías en configuración",
+      "selectCategories": "Configurar Categorías"
+    },
+    "quote": {
+      "title": "Frase del Día",
+      "text": "No hay manera de ser una madre perfecta, pero hay un millón de maneras de ser una buena madre"
+    },
+    "challenges": {
+      "title": "Retos Activos",
+      "viewAll": "Ver Todos",
+      "complete": "Completo"
+    }
+  },
+  "challenges": {
+    "title": "Retos",
+    "active": "Retos Activos",
+    "discover": "Descubre Nuevos Retos",
+    "search": "Buscar retos...",
+    "filters": "Filtros",
+    "filterCategories": "Categorías",
+    "filterDifficulty": "Dificultad",
+    "filterDuration": "Duración",
+    "applyFilters": "Aplicar Filtros",
+    "day": "Día",
+    "categories": {
+      "mindfulness": "Mindfulness",
+      "health": "Salud",
+      "education": "Educación",
+      "lifestyle": "Estilo de Vida"
+    },
+    "difficulty": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    },
+    "duration": {
+      "7days": "7 Días",
+      "14days": "14 Días",
+      "21days": "21 Días",
+      "30days": "30 Días"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "affirmations": "Afirmaciones Diarias",
+    "affirmationsDescription": "Elige qué tipos de afirmaciones te gustaría recibir diariamente. Puedes seleccionar múltiples categorías que resuenen con tu camino.",
+    "language": "Idioma",
+    "notifications": "Notificaciones",
+    "dailyAffirmation": "Afirmación Diaria",
+    "challengeReminders": "Recordatorios de Retos"
+  },
+  "profile": {
+    "title": "Perfil",
+    "username": "Nombre de Usuario",
+    "email": "Correo Electrónico",
+    "fullName": "Nombre Completo",
+    "numberOfKids": "Número de Hijos",
+    "saveChanges": "Guardar Cambios",
+    "signOut": "Cerrar Sesión",
+    "languages": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "read": "Leer",
+    "challenges": "Retos",
+    "videos": "Videos",
+    "community": "Comunidad",
+    "more": "Más"
+  },
+  "common": {
+    "done": "Listo",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "loading": "Cargando..."
+  }
+}

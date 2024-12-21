@@ -1,0 +1,41 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return request.auth != null && 
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Allow read access to all files
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write, delete: if isAuthenticated() && isAdmin();
+    }
+
+    // Test uploads for debugging
+    match /test/{fileName} {
+      allow read, write, delete: if isAuthenticated();
+    }
+
+    // Specific paths with their own rules
+    match /challenges/{fileName} {
+      allow read: if true;
+      allow write, delete: if isAuthenticated() && isAdmin();
+    }
+
+    match /covers/{fileName} {
+      allow read: if true;
+      allow write, delete: if isAuthenticated() && isAdmin();
+    }
+
+    match /books/{fileName} {
+      allow read: if true;
+      allow write, delete: if isAuthenticated() && isAdmin();
+    }
+  }
+}

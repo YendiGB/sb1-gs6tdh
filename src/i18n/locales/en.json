@@ -1,0 +1,89 @@
+{
+  "home": {
+    "today": "Today",
+    "affirmation": {
+      "title": "Daily Affirmation",
+      "text": "I embrace the journey of motherhood with grace and patience",
+      "noAffirmation": "No affirmation available for today",
+      "noCategories": "No affirmation categories available",
+      "noSelectedCategories": "Please select affirmation categories in settings",
+      "selectCategories": "Configure Categories"
+    },
+    "quote": {
+      "title": "Quote of the Day",
+      "text": "There is no way to be a perfect mother, but a million ways to be a good one"
+    },
+    "challenges": {
+      "title": "Active Challenges",
+      "viewAll": "View All",
+      "complete": "Complete"
+    }
+  },
+  "challenges": {
+    "title": "Challenges",
+    "active": "Active Challenges",
+    "discover": "Discover New Challenges",
+    "search": "Search challenges...",
+    "filters": "Filters",
+    "filterCategories": "Categories",
+    "filterDifficulty": "Difficulty",
+    "filterDuration": "Duration",
+    "applyFilters": "Apply Filters",
+    "day": "Day",
+    "categories": {
+      "mindfulness": "Mindfulness",
+      "health": "Health",
+      "education": "Education",
+      "lifestyle": "Lifestyle"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "duration": {
+      "7days": "7 Days",
+      "14days": "14 Days",
+      "21days": "21 Days",
+      "30days": "30 Days"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "affirmations": "Daily Affirmations",
+    "affirmationsDescription": "Choose which types of affirmations you'd like to receive daily. You can select multiple categories that resonate with your journey.",
+    "language": "Language",
+    "notifications": "Notifications",
+    "dailyAffirmation": "Daily Affirmation",
+    "challengeReminders": "Challenge Reminders"
+  },
+  "profile": {
+    "title": "Profile",
+    "username": "Username",
+    "email": "Email",
+    "fullName": "Full Name",
+    "numberOfKids": "Number of Kids",
+    "saveChanges": "Save Changes",
+    "signOut": "Sign Out",
+    "languages": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "read": "Read",
+    "challenges": "Challenges",
+    "videos": "Videos",
+    "community": "Community",
+    "more": "More"
+  },
+  "common": {
+    "done": "Done",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading..."
+  }
+}

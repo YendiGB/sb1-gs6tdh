@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary brand colors from logo */
+    --color-primary: 171 92 136; /* Mauve */
+    --color-secondary: 147 103 153; /* Purple */
+    --color-accent: 219 178 209; /* Light Pink */
+    
+    /* Neutral colors */
+    --color-neutral-50: 250 247 249;
+    --color-neutral-100: 244 238 242;
+    --color-neutral-200: 233 223 229;
+    --color-neutral-300: 214 198 208;
+    --color-neutral-400: 188 164 178;
+    --color-neutral-500: 171 92 136;
+    --color-neutral-600: 147 103 153;
+    --color-neutral-700: 123 86 128;
+    --color-neutral-800: 98 69 102;
+    --color-neutral-900: 74 52 77;
+  }
+
+  html, body, #root {
+    @apply bg-neutral-50 text-neutral-900 font-sans antialiased;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply flex flex-col items-center gap-1 px-2 py-1 text-neutral-500 hover:text-primary transition-colors relative;
+  }
+
+  .nav-link.active {
+    @apply text-primary;
+  }
+
+  .nav-link.active::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-primary;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-neutral-200/50 p-6 h-full transition-all duration-300 hover:shadow-md;
+  }
+
+  .button-primary {
+    @apply px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50;
+  }
+
+  .button-secondary {
+    @apply px-4 py-2 bg-neutral-100 text-neutral-700 rounded-lg hover:bg-neutral-200 transition-colors;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors;
+  }
+
+  .checkbox {
+    @apply rounded border-neutral-300 text-primary focus:ring-primary transition-colors;
+  }
+}
+
+/* Desktop Layout */
+.desktop-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.desktop-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  background: white;
+  border-right: 1px solid rgba(233, 223, 229, 0.5);
+  padding: 1.5rem;
+  z-index: 20;
+}
+
+.desktop-main {
+  grid-column: 2;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.desktop-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid rgba(233, 223, 229, 0.5);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+/* Animations */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
