@@ -14,7 +14,7 @@
     "@dnd-kit/sortable": "^8.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@stripe/stripe-js": "^2.4.0",
-    "@types/node": "^20.11.24",
+    "@types/node": "^24.0.0",
     "date-fns": "^3.3.1",
     "epubjs": "^0.3.93",
     "firebase": "^11.0.2",
